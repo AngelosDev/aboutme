@@ -28,31 +28,31 @@
       <div class="toc">
         <h2>Contents</h2>
         <ul>
-          <li><a href="#executive-summary">1. Executive Summary</a></li>
-          <li><a href="#vision">2. Vision and Strategic Goals</a></li>
-          <li><a href="#architecture">3. System Architecture Overview</a></li>
-          <li><a href="#multi-tenancy">4. Platform Multi-Tenancy</a></li>
-          <li><a href="#scalability">5. Scalability and Tenant Isolation</a></li>
-          <li><a href="#cost">6. Cost Management Strategy</a></li>
-          <li><a href="#customization">7. Customization and Deployment Complexity</a></li>
-          <li><a href="#operational">8. Operational Complexity and Service Ownership</a></li>
-          <li><a href="#data-mesh">9. Data Mesh Architecture Strategy</a></li>
-          <li><a href="#software">10. Software Strategy</a></li>
-          <li><a href="#governance">11. Data Governance and Compliance</a></li>
-          <li><a href="#risks">12. Key Risks and Mitigations</a></li>
-          <li><a href="#roadmap">13. Technology Roadmap</a></li>
-          <li><a href="#succession">14. Succession Planning</a></li>
-          <li><a href="#innovation">15. Innovation and Experimentation Framework</a></li>
-          <li><a href="#business">16. Business Alignment</a></li>
-          <li><a href="#collaboration">17. Collaboration and Communication</a></li>
+          <li><a href="#executive-summary">Executive Summary</a></li>
+          <li><a href="#vision">Vision and Strategic Goals</a></li>
+          <li><a href="#architecture">System Architecture Overview</a></li>
+          <li><a href="#multi-tenancy">Platform Multi-Tenancy</a></li>
+          <li><a href="#scalability">Scalability and Tenant Isolation</a></li>
+          <li><a href="#cost">Cost Management Strategy</a></li>
+          <li><a href="#customization">Customization and Deployment Complexity</a></li>
+          <li><a href="#operational">Operational Complexity and Service Ownership</a></li>
+          <li><a href="#data-mesh">Data Mesh Architecture Strategy</a></li>
+          <li><a href="#software">Software Strategy</a></li>
+          <li><a href="#governance">Data Governance and Compliance</a></li>
+          <li><a href="#risks">Key Risks and Mitigations</a></li>
+          <li><a href="#roadmap">Technology Roadmap</a></li>
+          <li><a href="#succession">Succession Planning</a></li>
+          <li><a href="#innovation">Innovation and Experimentation Framework</a></li>
+          <li><a href="#business">Business Alignment</a></li>
+          <li><a href="#collaboration">Collaboration and Communication</a></li>
         </ul>
       </div>
 
       <section id="executive-summary">
-        <h2>1. Executive Summary</h2>
+        <h2>Executive Summary</h2>
         <p>
-          This document outlines the technical strategy and architecture of a multi-cloud, multi-tenant SaaS platform.
-          It covers key areas such as platform multi-tenancy, scalability, tenant isolation, cost management,
+          This document outlines an example technical strategy and architecture of a multi-cloud, multi-tenant SaaS
+          platform. It covers key areas such as platform multi-tenancy, scalability, tenant isolation, cost management,
           customization, operational complexity, service ownership, and data architecture. The aim is to ensure the
           platform remains scalable, secure, and aligned with business goals while supporting continuous innovation and
           operational efficiency. This document also includes strategic guidelines for future development, key risks,
@@ -61,7 +61,7 @@
       </section>
 
       <section id="vision">
-        <h2>2. Vision and Strategic Goals</h2>
+        <h2>Vision and Strategic Goals</h2>
         <p>
           Our vision is to create a robust, scalable, and highly customizable SaaS platform that meets the diverse needs
           of our customers across various regions and industries. The strategic goals are:
@@ -91,7 +91,7 @@
       </section>
 
       <section id="architecture">
-        <h2>3. System Architecture Overview</h2>
+        <h2>System Architecture Overview</h2>
         <p>
           Our platform is a multi-tenant SaaS solution designed to operate across multiple cloud providers, including
           AWS, GCP, and Azure. The system architecture is divided into several key components:
@@ -122,7 +122,7 @@
       </section>
 
       <section id="multi-tenancy">
-        <h2>4. Platform Multi-Tenancy</h2>
+        <h2>Platform Multi-Tenancy</h2>
         <p>
           Our platform supports a multi-cloud (AWS, GCP, Azure), multi-tenant SaaS model. Each tenant's data is
           isolated, ensuring that customers can operate independently without affecting others. The platform can support
@@ -134,7 +134,7 @@
       </section>
 
       <section id="scalability">
-        <h2>5. Scalability and Tenant Isolation</h2>
+        <h2>Scalability and Tenant Isolation</h2>
         <p>
           As the business scales, the platform is designed to handle increased workloads by providing horizontal scaling
           capabilities such as database sharding, load balancing, and state management solutions. Tenant isolation is a
@@ -144,7 +144,7 @@
       </section>
 
       <section id="cost">
-        <h2>6. Cost Management Strategy</h2>
+        <h2>Cost Management Strategy</h2>
         <p>
           The platform is designed to keep per-tenant costs to a minimum, ensuring that the number of tenants grows
           faster than the associated costs. This non-linear cost growth is achieved through efficient resource
@@ -155,7 +155,7 @@
       </section>
 
       <section id="customization">
-        <h2>7. Customization and Deployment Complexity</h2>
+        <h2>Customization and Deployment Complexity</h2>
         <p>
           All features are available to every tenant, with customizations handled through configuration and feature
           flags. This approach ensures that we do not deploy different versions of the platform for different tenants,
@@ -165,7 +165,7 @@
       </section>
 
       <section id="operational">
-        <h2>8. Operational Complexity and Service Ownership</h2>
+        <h2>Operational Complexity and Service Ownership</h2>
         <p>
           We adhere to a "you build it, you run it" philosophy, where each service is owned by the team responsible for
           its development, operation, and maintenance. Each service must self-document its owners and supporting
@@ -176,7 +176,7 @@
       </section>
 
       <section id="data-mesh">
-        <h2>9. Data Mesh Architecture Strategy</h2>
+        <h2>Data Mesh Architecture Strategy</h2>
         <p>
           Our platform follows a decentralized data mesh architecture, empowering business domains to control their
           data, security, and compliance. Data access is primarily programmatic via APIs, as well as utilizing data
@@ -187,7 +187,7 @@
       </section>
 
       <section id="software">
-        <h2>10. Software Strategy</h2>
+        <h2>Software Strategy</h2>
         <p>
           Teams have some freedom to experiment with programming languages suitable for their solutions, but we favor
           tech stacks that support hiring, training, and problem-solving efficiency. Our core languages include
@@ -199,7 +199,7 @@
       </section>
 
       <section id="governance">
-        <h2>11. Data Governance and Compliance</h2>
+        <h2>Data Governance and Compliance</h2>
         <p>
           To ensure that our platform adheres to legal and organizational requirements, we implement strict data
           governance and compliance measures:
@@ -225,7 +225,7 @@
       </section>
 
       <section id="risks">
-        <h2>12. Key Risks and Mitigations</h2>
+        <h2>Key Risks and Mitigations</h2>
         <p>Key risks to our platform and the strategies to mitigate them include:</p>
         <ul>
           <li>
@@ -253,7 +253,7 @@
       </section>
 
       <section id="roadmap">
-        <h2>13. Technology Roadmap</h2>
+        <h2>Technology Roadmap</h2>
         <p>Our technology roadmap outlines the planned initiatives for the platform over the next 12-24 months:</p>
         <ul>
           <li>
@@ -289,7 +289,7 @@
       </section>
 
       <section id="innovation">
-        <h2>15. Innovation and Experimentation Framework</h2>
+        <h2>Innovation and Experimentation Framework</h2>
         <p>To foster innovation while managing risks, we have established the following guidelines:</p>
         <ul>
           <li>
@@ -308,7 +308,7 @@
       </section>
 
       <section id="business">
-        <h2>16. Business Alignment</h2>
+        <h2>Business Alignment</h2>
         <p>Our technology strategy is closely aligned with our business objectives:</p>
         <ul>
           <li>
@@ -327,7 +327,7 @@
       </section>
 
       <section id="collaboration">
-        <h2>17. Collaboration and Communication</h2>
+        <h2>Collaboration and Communication</h2>
         <p>Effective collaboration and communication are critical to our success:</p>
         <ul>
           <li>
