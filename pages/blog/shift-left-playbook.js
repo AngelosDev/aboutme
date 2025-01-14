@@ -24,10 +24,11 @@ export default function ShiftLeftPlaybook() {
           </p>
 
           <p>
-            However, implementing a shift-left culture requires more than just using the right tools. It's a cultural
-            shift that requires active buy-in from teams, especially in data organizations, where a single mistake can
-            lead to significant problems. Fear and resistance are natural in such environments, but with the right
-            approach, you can guide teams to embrace a culture of
+            However, implementing a shift-left culture requires more than hiring SDETs, writing tests, or even using the
+            right tools. It's a cultural shift that requires active buy-in from business leaders, managers and their
+            teams. The biggest impediment in successfully adopting shift-left culture is lack of psychological safety.
+            However if you are a leader trying to shift-left your team, following some of the steps below, you can
+            establish where your team stands today and help your teams to embrace a culture of{' '}
             <strong>collaboration, quality, and continuous improvement</strong>.
           </p>
 
@@ -38,7 +39,7 @@ export default function ShiftLeftPlaybook() {
           </p>
 
           <section id="stage1" className={styles.section}>
-            <h4>1. Ad Hoc / Initial Stage</h4>
+            <h4>1. Unaware</h4>
             <p>
               <strong>Description:</strong> Testing is mostly non-existent or reactive. There's little awareness of the
               benefits of testing early in the process.
@@ -55,7 +56,7 @@ export default function ShiftLeftPlaybook() {
           </section>
 
           <section id="stage2" className={styles.section}>
-            <h4>2. Reactive Stage</h4>
+            <h4>2. Recognizing</h4>
             <p>
               <strong>Description:</strong> Teams are aware of the need for testing but often do it too late, with
               manual testing and bottlenecks in the process.
@@ -72,7 +73,7 @@ export default function ShiftLeftPlaybook() {
           </section>
 
           <section id="stage3" className={styles.section}>
-            <h4>3. Defined Stage</h4>
+            <h4>3. Implementing</h4>
             <p>
               <strong>Description:</strong> Structured testing processes are introduced, with unit tests and basic
               automation. SDETs begin working with developers on test scenarios.
@@ -89,7 +90,7 @@ export default function ShiftLeftPlaybook() {
           </section>
 
           <section id="stage4" className={styles.section}>
-            <h4>4. Proactive Stage</h4>
+            <h4>4. Mastering</h4>
             <p>
               <strong>Description:</strong> Shift-left testing becomes part of the team's culture. Testing is automated,
               and feedback loops are implemented to ensure code quality before production.
@@ -106,7 +107,7 @@ export default function ShiftLeftPlaybook() {
           </section>
 
           <section id="stage5" className={styles.section}>
-            <h4>5. Optimized Stage</h4>
+            <h4>5. Transforming</h4>
             <p>
               <strong>Description:</strong> Testing is fully integrated into every stage of development. There is
               continuous monitoring and improvement, and no external sign-offs are needed for production releases.
