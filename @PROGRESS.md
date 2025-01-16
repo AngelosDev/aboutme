@@ -9,3 +9,8 @@
 - [x] Updated GitHub Actions workflow to use Node.js 20 (required by Next.js)
 - [x] Simplified build process by removing redundant export command
 - [x] Updated GitHub Actions dependencies to latest versions (setup-node@v4, deploy-pages@v4)
+
+### Iteration 2: GitHub Pages Deployment Fix
+
+- [x] Added .nojekyll file to prevent GitHub Pages from processing the site as Jekyll
+- [x] Updated GitHub Actions workflow to copy .nojekyll file to the output directory
