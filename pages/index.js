@@ -18,23 +18,30 @@ export default function Home() {
         <section>
           <h2>About Me</h2>
           <p>
-            I'm a technology leader with a proven track record of driving innovation and growth across SaaS data
-            platforms, retail, and marketplaces. I've led teams of up to 100 engineers in startups, scaleups, and
-            enterprise environments, delivering B2B projects with revenues ranging from £200k to £1.5M ARR.
+            Technology leader with 20 years of experience in developing engineering culture, strategy and SaaS data
+            platforms.
           </p>
           <p>
-            In my most recent role at Baresquare, I led the development of a Seed-funded AI/ML insights SaaS. I joined
-            the founding team, re-architected their solution, and overhauled the team and processes to deliver the
-            product in a lean and nimble way, without any attrition.
+            Whether you are a startup, scaleup, or enterprise, I have developed the skills that can help you build
+            high-performing teams, deliver impactful tech solutions, and drive business growth.
           </p>
-          <p>
-            Earlier in my career, as CTO UK at Maru Group, I spearheaded the development of new capabilities, platform
-            migrations, and acquisitions, generating over $35M in annual revenue. I've also delivered impactful tech
-            solutions and improved team operations at Sainsbury's and Checkatrade.
-          </p>
+          <h3>Key accomplishments</h3>
+          <p>Across my time at Maru, Sainsbury's, Checkatrade and Baresquare</p>
+          <ul>
+            <li>Delivered growth pre and post-acquisition from £1M to £35M ARR.</li>
+            <li>Halved unit costs by optimizing cloud architecture and SDLC.</li>
+            <li>
+              Developed AI enabled data platforms to deliver faster, more accurate business insights and improved UX via
+              RAG.
+            </li>
+            <li>Managed enterprise stakeholders to successfully commission a new product.</li>
+            <li>
+              Delivered CX programmes for enterprise customers in the UK, US and Canada (e.g Tesco, BA, Uber, Sony)
+            </li>
+          </ul>
         </section>
         <section>
-          <h2>Achievements</h2>
+          <h2>Approach</h2>
           <h3>People</h3>
           <p>
             My leadership approach centers on empowering individuals and fostering collaborative, high-performing teams.
