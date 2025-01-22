@@ -13,6 +13,9 @@ const Nav = () => (
       <li>
         <Link href="/experience">Experience</Link>
       </li>
+      <li>
+        <Link href="/projects">Personal Projects</Link>
+      </li>
     </ul>
   </nav>
 );

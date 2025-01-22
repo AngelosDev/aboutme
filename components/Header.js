@@ -5,6 +5,7 @@ const Header = ({ title, subtitle }) => (
     <img src="/avatar.png" alt="Angelos Devletoglou" className="avatar" />
     <h1>{title}</h1>
     <p>{subtitle}</p>
+    <link rel="icon" href="/favicon.ico" />
   </header>
 );
 
