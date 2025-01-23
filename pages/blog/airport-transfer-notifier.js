@@ -28,13 +28,13 @@ export default function LeadershipPlaybook() {
           </p>
           <h3>Why Use Airport Transfer Notifier?</h3>
           <ul>
-            <li>🚖 **Instant Notifications:** Receive new transfer job alerts as soon as they're available.</li>
-            <li>📅 **Reduce Downtime:** Get more jobs and maximize earnings without waiting around.</li>
-            <li>🔗 **Seamless Integration:** Works with existing messaging platforms, no new apps required.</li>
+            <li>Instant Notifications: Receive new transfer job alerts as soon as they are available.</li>
+            <li>Reduce Downtime: Get more jobs and maximize earnings without waiting around.</li>
+            <li>Seamless Integration: Works with existing messaging platforms, no new apps required.</li>
           </ul>
           <p>
-            Whether you're an independent driver or part of a fleet, **Airport Transfer Notifier** helps you stay ahead
-            of the competition and secure more passengers with minimal effort.
+            Build by me, for a friendly business and runs on AWS Lambda & DynamoDB, ensuring low costs and high
+            availability.
           </p>
         </article>
       </main>
