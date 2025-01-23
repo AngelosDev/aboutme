@@ -83,11 +83,11 @@ export default function Home() {
             </li>
             <li>
               Productivity Gains: Boosted team productivity by 60% via clear strategy, empowerment, and metrics, leading
-              to faster feature releases.
+              to faster value delivery and product releases.
             </li>
             <li>
-              Cost Optimization: Cut operational expenses by £20K and reduced unit costs by 40% through strategic
-              migrations and infrastructure re-architecture.
+              Cost Optimization: Cut operational expenses and reduced unit costs by 40% through strategic migrations and
+              infrastructure re-architecture.
             </li>
             <li>
               Operational Efficiency: Transitioned outsourced operations to high-performing internal teams, reducing
