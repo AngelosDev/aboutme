@@ -22,7 +22,7 @@ export default function Experience() {
               <h3 className={styles['timeline-title']}>Head of Engineering</h3>
               <p>
                 Joined the founding team, led the development of a Seed-funded AI/ML e-commerce revenue insights SaaS.
-                Re-architected existing data platform, with cost ans scale in mind. Overhauled the team structure and
+                Re-architected existing data platform, with cost and scale in mind. Overhauled the team structure and
                 processes to enhance product delivery in a lean and nimble way.
               </p>
             </div>
