@@ -22,7 +22,7 @@ export default function LeadershipPlaybook() {
             <h2>The Problem:</h2>
             <p>
               Homeowners across the UK and beyond are facing skyrocketing energy prices. While energy providers promote
-              smart meters and data dashboards to help them see real-time consuption and understand where to cut
+              smart meters and data dashboards to help them see real-time consumption and understand where to cut
               spending, the reality is that understanding and acting on this data requires time, effort, and technical
               know-how. As a result, many homeowners struggle to optimize their energy consumption effectively.
             </p>

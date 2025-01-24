@@ -88,7 +88,7 @@ export default function Experience() {
               <h3 className={styles['timeline-title']}>Software Engineering positions</h3>
               <p>
                 Started my career as a PHP developer in a boutique web design agency, developed a content management
-                system, a white label e-commerce platform, sms marketing platform. Moved on in a scalup agency,
+                system, a white label e-commerce platform, sms marketing platform. Moved on in a scale-up agency,
                 delivering projects for customers such as the BBC, Sky, British Airways, Sainsbury's and many more
                 enterprise customers.
               </p>

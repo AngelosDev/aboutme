@@ -33,7 +33,7 @@ export default function LeadershipPlaybook() {
             <li>Seamless Integration: Works with existing messaging platforms, no new apps required.</li>
           </ul>
           <p>
-            Build by me, for a friendly business and runs on AWS Lambda & DynamoDB, ensuring low costs and high
+            Built by me, for a friendly business and runs on AWS Lambda & DynamoDB, ensuring low costs and high
             availability.
           </p>
         </article>
