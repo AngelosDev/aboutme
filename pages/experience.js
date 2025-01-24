@@ -11,7 +11,7 @@ export default function Experience() {
         <title>Experience - Angelos Devletoglou</title>
         <meta name="description" content="Experience of Angelos Devletoglou" />
       </Head>
-      <Header />
+      <Header title="Experience" subtitle="Career and education timeline" />
       <Nav />
       <main>
         <div className={styles.timeline}>
@@ -91,6 +91,17 @@ export default function Experience() {
                 system, a white label e-commerce platform, sms marketing platform. Moved on in a scalup agency,
                 delivering projects for customers such as the BBC, Sky, British Airways, Sainsbury's and many more
                 enterprise customers.
+              </p>
+            </div>
+          </div>
+          <div className={`${styles['timeline-item']} ${styles.left}`}>
+            <div className={styles['timeline-content']}>
+              <img src="/logo-uop.png" alt="University of Portsmouth" className={styles['timeline-logo']} />
+              <div className={styles['timeline-date']}>2000 - 2003</div>
+              <h3 className={styles['timeline-title']}>BSc in Internet Technology</h3>
+              <p>
+                Studied at the University of Portsmouth, graduating with a 2:1 in Internet Technology. <br /> Final year
+                project: J2ME mobile application for university registry.
               </p>
             </div>
           </div>

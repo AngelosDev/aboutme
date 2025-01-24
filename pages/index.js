@@ -67,7 +67,7 @@ export default function Home() {
             <li>Strong team retention, and appointments from internal talent that might otherwise have been lost.</li>
             <li>
               Built strong relationships with external contractors, earning their trust and ensuring long-term
-              collaboration
+              collaboration.
             </li>
             <li>Mentored managers continuing to seek my guidance even after my departure.</li>
           </ul>
@@ -118,7 +118,7 @@ export default function Home() {
           <ul>
             <li>
               Cloud-Native Platforms: Designed scalable, cloud-native platforms to enhance performance and reduce
-              operational costs
+              operational costs.
             </li>
             <li>
               DevOps Transformation: Embedded CI/CD pipelines, on-call rotations, and DevOps best practices, improving

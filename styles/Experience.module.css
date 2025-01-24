@@ -67,6 +67,8 @@
 
 .timeline-logo {
   height: 40px;
+  max-width: 100%;
+  object-fit: contain;
   margin-bottom: 15px;
 }
 

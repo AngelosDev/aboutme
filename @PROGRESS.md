@@ -14,3 +14,7 @@
 
 - [x] Added .nojekyll file to prevent GitHub Pages from processing the site as Jekyll
 - [x] Updated GitHub Actions workflow to copy .nojekyll file to the output directory
+
+### Iteration 3: Responsive Design Improvements
+
+- [x] Fixed logo overflow issue in experience timeline by implementing responsive image constraints
