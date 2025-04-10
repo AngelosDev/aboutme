@@ -1,26 +1,61 @@
 .main {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
 }
 
 .article {
   background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  /* Override the default section styling for the article container */
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .toc {
   background: #f8f9fa;
   padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+/* Desktop layout with sidebar */
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .article {
+    flex: 1;
+  }
+
+  .toc {
+    width: 220px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    position: sticky;
+    top: 80px;
+    margin-bottom: 0;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
 }
 
 .toc h2 {
   color: #2c3e50;
   margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .toc ul {
@@ -29,55 +64,88 @@
 }
 
 .toc li {
-  margin: 8px 0;
+  margin: 6px 0;
+  font-size: 0.95rem;
 }
 
 .toc a {
   color: #3498db;
   text-decoration: none;
   transition: color 0.2s;
+  display: block;
+  padding: 4px 0;
 }
 
 .toc a:hover {
   color: #2980b9;
 }
 
+/* Override the default section styling for blog posts */
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+  position: relative;
+  /* Override the default section styling */
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.section:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
 
 .section h2 {
   color: #2c3e50;
-  margin: 30px 0 20px;
-  font-size: 1.8rem;
+  margin: 32px 0 16px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-bottom: 6px;
+  /* Override the default heading border */
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* First heading needs less top margin */
+.section:first-child h2 {
+  margin-top: 0;
 }
 
 .section h3 {
   color: #34495e;
-  margin: 25px 0 15px;
-  font-size: 1.5rem;
+  margin: 18px 0 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .section h4 {
   color: #2c3e50;
-  margin: 20px 0 10px;
-  font-size: 1.2rem;
+  margin: 16px 0 8px;
+  font-size: 1.15rem;
+  font-weight: 500;
 }
 
 .section p {
   line-height: 1.7;
-  color: #444;
-  margin-bottom: 15px;
+  color: #4a5568;
+  margin-bottom: 14px;
 }
 
-.section ul {
+.section ul,
+.section ol {
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .section li {
-  margin: 10px 0;
+  margin: 6px 0;
   line-height: 1.6;
+  color: #4a5568;
 }
 
 .section strong {
@@ -88,12 +156,12 @@
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .table th,
 .table td {
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #e1e1e1;
   text-align: left;
 }
@@ -108,15 +176,22 @@
   background-color: #f8f9fa;
 }
 
-@media (max-width: 768px) {
+/* Mobile adjustments */
+@media (max-width: 991px) {
   .main {
     padding: 15px;
   }
 
   .article {
-    padding: 20px;
+    padding: 15px;
   }
 
+  .toc {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
   .section h2 {
     font-size: 1.6rem;
   }

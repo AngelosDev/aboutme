@@ -81,48 +81,10 @@ main {
   margin: auto;
 }
 
-.toc {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.toc h2 {
-  margin-top: 0;
-  color: #2c3e50;
-  font-size: 1.75rem;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.toc ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.toc li {
-  margin-bottom: 0.75rem;
-}
-
-.toc a {
-  color: #3498db;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 500;
-}
-
-.toc a:hover {
-  color: #2980b9;
-}
-
+/* Standard sections for homepage and regular content */
 section {
   background: #fff;
-  padding: 2.5rem;
+  padding: 2rem;
   margin: 2rem 0;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -161,6 +123,7 @@ section h4 {
   margin-bottom: 0.75rem;
 }
 
+/* General text styling */
 p {
   margin: 1rem 0;
   color: #4a5568;
@@ -169,6 +132,8 @@ p {
 ul {
   padding-left: 1.5rem;
   color: #4a5568;
+  margin-top: 0.75rem; /* Added consistent margin */
+  margin-bottom: 0.75rem; /* Added consistent margin */
 }
 
 ul li {
