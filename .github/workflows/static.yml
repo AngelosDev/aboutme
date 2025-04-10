@@ -32,14 +32,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Create .nojekyll file
+        run: touch .nojekyll
+
+      - name: Update next.config.js for static export
+        run: |
+          echo "const nextConfig = {
+            reactStrictMode: true,
+            images: {
+              domains: ['localhost'],
+              unoptimized: true,
+            },
+            output: 'export',
+          }; module.exports = nextConfig;" > next.config.js
+
       - name: Build project
         run: npm run build
-
-      - name: Create output directory
-        run: mkdir -p out
-
-      - name: Copy .nojekyll
-        run: cp .nojekyll out/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
