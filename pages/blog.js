@@ -8,6 +8,24 @@ import styles from '../styles/Blog.module.css';
 
 const blogPosts = [
   {
+    id: 'developer-productivity-insights',
+    title: 'Developer Productivity Insights',
+    date: 'April 9, 2025',
+    excerpt:
+      'Key lessons from Netflix, Indeed, Dropbox, Pinterest, and Twilio on measuring and improving developer productivity at scale.',
+    image: '/developer-productivity-insights.png',
+    href: '/blog/developer-productivity-insights',
+  },
+  {
+    id: 'responsible-ai',
+    title: 'Principles of Responsible AI',
+    date: 'April 2, 2025',
+    excerpt:
+      'Exploring the six key principles of responsible AI and how organizations can implement ethical frameworks in the race to adopt artificial intelligence technologies.',
+    image: '/responsible-ai.png',
+    href: '/blog/responsible-ai',
+  },
+  {
     id: 'tech-strategy',
     title: 'Tech Strategy',
     date: 'March 15, 2024',
@@ -48,19 +66,21 @@ export default function Blog() {
       <main className={styles.main}>
         <div className={styles.grid}>
           {blogPosts.map((post) => (
-            <Link href={post.href} key={post.id} className={styles.cardLink}>
-              <article className={styles.card}>
-                <div className={styles.cardImage}>
-                  <Image src={post.image} alt={post.title} fill style={{ objectFit: 'cover' }} />
+            <div key={post.id} className={styles.cardLink}>
+              <Link href={post.href}>
+                <div className={styles.card}>
+                  <div className={styles.cardImage}>
+                    <Image src={post.image} alt={post.title} fill style={{ objectFit: 'cover' }} />
+                  </div>
+                  <div className={styles.cardContent}>
+                    <div className={styles.cardDate}>{post.date}</div>
+                    <h2 className={styles.cardTitle}>{post.title}</h2>
+                    <p className={styles.cardExcerpt}>{post.excerpt}</p>
+                    <span className={styles.cardReadMore}>Read More</span>
+                  </div>
                 </div>
-                <div className={styles.cardContent}>
-                  <div className={styles.cardDate}>{post.date}</div>
-                  <h2 className={styles.cardTitle}>{post.title}</h2>
-                  <p className={styles.cardExcerpt}>{post.excerpt}</p>
-                  <span className={styles.cardReadMore}>Read More</span>
-                </div>
-              </article>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </main>

@@ -11,7 +11,7 @@ export default function Experience() {
         <title>Experience - Angelos Devletoglou</title>
         <meta name="description" content="Experience of Angelos Devletoglou" />
       </Head>
-      <Header title="Experience" subtitle="Career and education timeline" />
+      <Header title="Career" subtitle="Career and education timeline" />
       <Nav />
       <main>
         <div className={styles.timeline}>

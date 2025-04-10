@@ -39,118 +39,57 @@ export default function Home() {
               Delivered CX programmes for enterprise customers in the UK, US and Canada (e.g Tesco, BA, Uber, Sony)
             </li>
           </ul>
-        </section>
-        <section>
-          <h2>Approach</h2>
+          <h2>Leadership</h2>
+          <p>
+            I inspire <strong>people</strong>, deliver <strong>business</strong> impact, and build future-ready{' '}
+            <strong>technology</strong>. I thrive in environments where strategic thinking, innovation, and strong
+            execution are essential.
+          </p>
+
           <h3>People</h3>
           <p>
-            My leadership approach centers on empowering individuals and fostering collaborative, high-performing teams.
-            Some key accomplishments include:
+            I build high-performing, resilient teams by fostering trust, autonomy, and a culture of continuous growth.
           </p>
           <ul>
             <li>
-              Empowered individuals to take ownership of their decisions, fostering a culture of trust and
-              accountability.
+              Leadership Coaching & Mentoring: Helping individuals and managers grow through structured development
+              frameworks
             </li>
+            <li>Team Culture & Engagement: Building psychologically safe, inclusive, and collaborative environments</li>
             <li>
-              Guided team members in defining and achieving their career goals, contributing to personal and
-              professional growth.
+              Talent Retention & Growth: Designing org structures and career pathways that support long-term success
             </li>
-            <li>
-              Created a psychologically safe environment of open communication, where team members felt supported,
-              listened to, and guided.
-            </li>
-            <li>Resolved interpersonal conflicts, balancing team dynamics and enhancing overall performance.</li>
-            <li>
-              Transformed underperformers into high-performing contributors through targeted mentorship and coaching.
-            </li>
-            <li>Strong team retention, and appointments from internal talent that might otherwise have been lost.</li>
-            <li>
-              Built strong relationships with external contractors, earning their trust and ensuring long-term
-              collaboration.
-            </li>
-            <li>Mentored managers continuing to seek my guidance even after my departure.</li>
           </ul>
+
           <h3>Business</h3>
-          <p>
-            Driving business growth and impact through strategic initiatives and operational excellence, I've achieved
-            milestones such as:
-          </p>
+          <p>I drive growth by aligning technology strategy with commercial outcomes and operational excellence.</p>
           <ul>
             <li>
-              Improved Scalability & Reduced Costs: Optimized data processing through ephemeral cloud-native platforms,
-              reducing costs by 20-50%.
+              Tech Strategy & Execution Planning: Bridging business goals with engineering roadmaps and investment cases
             </li>
             <li>
-              Productivity Gains: Boosted team productivity by 60% via clear strategy, empowerment, and metrics, leading
-              to faster value delivery and product releases.
+              Operational Excellence & Cost Optimisation: Streamlining delivery and reducing operational spend through
+              automation and balancing insourcing with outsourcing
             </li>
             <li>
-              Cost Optimization: Cut operational expenses and reduced unit costs by 40% through strategic migrations and
-              infrastructure re-architecture.
-            </li>
-            <li>
-              Operational Efficiency: Transitioned outsourced operations to high-performing internal teams, reducing
-              OPEX and ensuring seamless delivery within months.
-            </li>
-            <li>
-              Business Expansion through acquisitions: Migrated and embedded two new businesses on owned platform
-              driving significant growth and revenue.
-            </li>
-            <li>
-              Award-Winning Solutions: Delivered award-winning Customer Experience Management and Market Research
-              solutions, enhancing client satisfaction and business outcomes.
-            </li>
-            <li>
-              Team Growth: Scaled development teams from 30 to 50+ members, integrating acquisitions and new hires
-              seamlessly.
-            </li>
-            <li>
-              Innovation: Introduced new technologies and methodologies, such as AI/ML, cloud-native platforms, and
-              DevOps, to drive innovation and competitive advantage.
+              Post-M&A Integration & Scaling: Onboarding teams, aligning platforms, and embedding culture after
+              acquisitions
             </li>
           </ul>
+
           <h3>Technology</h3>
-          <p>
-            My technical expertise lies in designing and delivering scalable, innovative solutions that align with
-            business goals. Highlights include:
-          </p>
+          <p>I design and deliver modern, scalable solutions that create scalable value and competitive advantage.</p>
           <ul>
             <li>
-              Cloud-Native Platforms: Designed scalable, cloud-native platforms to enhance performance and reduce
-              operational costs.
+              Platform Architecture & Cloud Modernisation: Designing resilient, cloud-native infrastructures on AWS/GCP
             </li>
             <li>
-              DevOps Transformation: Embedded CI/CD pipelines, on-call rotations, and DevOps best practices, improving
-              deployment speed and reliability.
+              Data & AI Product Development: Building intelligent systems with real-time analytics and AI/ML
+              capabilities
             </li>
             <li>
-              AI/ML Innovation: Developed AI/ML product for actionable insights, leveraging natural language processing,
-              anomaly detection and root cause analysis.
-            </li>
-            <li>
-              Microservices Migration: Transitioned legacy systems to microservices on AWS/GCP, improving performance
-              and delivery throughput by 40%.
-            </li>
-            <li>
-              Advanced Infrastructure: Built high-availability cloud systems using AWS, Kubernetes, Terraform, and
-              Datadog to ensure scalability and security.
-            </li>
-            <li>
-              Data Platforms: Architected real-time data platforms utilizing Kafka, PostgreSQL, BigQuery, and Airflow
-              for scalable analytics.
-            </li>
-            <li>
-              Innovation Incubator: Pioneered novel tech solutions, including voice surveys, Messenger bots, AR/VR
-              experiences, and geofencing apps.
-            </li>
-            <li>
-              Developer Experience: Improved developer experience with tooling like Swarmia, Datadog, Asynchornous
-              standups, Miro for improved collaboration, self-evaluation metrics, monitoring and alerting.
-            </li>
-            <li>
-              Software Architecture: Led the design of robust, scalable software systems across Python, Node.js, React,
-              and AWS ecosystems.
+              Developer Experience & DevOps Enablement: Implementing CI/CD, monitoring, and tooling to increase
+              productivity and quality
             </li>
           </ul>
         </section>

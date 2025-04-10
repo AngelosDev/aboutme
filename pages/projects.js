@@ -39,19 +39,21 @@ export default function Blog() {
       <main className={styles.main}>
         <div className={styles.grid}>
           {blogPosts.map((post) => (
-            <Link href={post.href} key={post.id} className={styles.cardLink}>
-              <article className={styles.card}>
-                <div className={styles.cardImage}>
-                  <Image src={post.image} alt={post.title} fill style={{ objectFit: 'cover' }} />
+            <div key={post.id} className={styles.cardLink}>
+              <Link href={post.href}>
+                <div className={styles.card}>
+                  <div className={styles.cardImage}>
+                    <Image src={post.image} alt={post.title} fill style={{ objectFit: 'cover' }} />
+                  </div>
+                  <div className={styles.cardContent}>
+                    <div className={styles.cardDate}>{post.date}</div>
+                    <h2 className={styles.cardTitle}>{post.title}</h2>
+                    <p className={styles.cardExcerpt}>{post.excerpt}</p>
+                    <span className={styles.cardReadMore}>Read More</span>
+                  </div>
                 </div>
-                <div className={styles.cardContent}>
-                  <div className={styles.cardDate}>{post.date}</div>
-                  <h2 className={styles.cardTitle}>{post.title}</h2>
-                  <p className={styles.cardExcerpt}>{post.excerpt}</p>
-                  <span className={styles.cardReadMore}>Read More</span>
-                </div>
-              </article>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </main>
