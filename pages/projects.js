@@ -13,7 +13,7 @@ const blogPosts = [
     date: 'February 20, 2023',
     excerpt:
       'Boost airport transfer earnings with instant job alerts via Telegram/WhatsApp. Stay ahead, reduce downtime, and secure more transfers effortlessly!',
-    image: '/airport-transfer.webp',
+    image: '/airport-transfer.png',
     href: '/blog/airport-transfer-notifier',
   },
   {
@@ -22,7 +22,7 @@ const blogPosts = [
     date: 'January 1, 2025',
     excerpt:
       "Take control of your home's energy like never before! Get smart insights on your usage, optimize heating and power, and make informed decisions to save money and live sustainably",
-    image: '/energy-insights.webp',
+    image: '/energy-insights.png',
     href: '/blog/energy-insights-pal',
   },
 ];
