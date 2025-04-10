@@ -153,21 +153,26 @@ footer p {
   margin: 0;
 }
 
-footer .linkedin-link {
-  display: inline-block;
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
-footer .linkedin-link img {
+footer .social-link {
+  display: inline-block;
+}
+
+footer .social-link img {
   width: auto;
-  height: 20px;
+  height: 24px;
   vertical-align: middle;
-  margin-right: 5px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
-footer .linkedin-link:hover img {
+footer .social-link:hover img {
   opacity: 1;
 }
 
