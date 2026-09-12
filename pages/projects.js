@@ -9,10 +9,10 @@ import styles from '../styles/Blog.module.css';
 const blogPosts = [
   {
     id: 'airport-transfer-notifier',
-    title: 'Airport Transfer Assistant',
+    title: 'Airport Transfer Notifier',
     date: 'February 20, 2023',
     excerpt:
-      'Boost airport transfer earnings with instant job alerts via Telegram/WhatsApp. Stay ahead, reduce downtime, and secure more transfers effortlessly!',
+      'A production-grade serverless AWS app built for a small airport transfer taxi business: catches new transfer jobs the moment they appear and relays them straight to Telegram, where drivers can accept or decline with a single tap.',
     image: '/airport-transfer.png',
     href: '/blog/airport-transfer-notifier',
   },
@@ -21,7 +21,7 @@ const blogPosts = [
     title: 'Energy Insights Pal',
     date: 'January 1, 2025',
     excerpt:
-      "Take control of your home's energy like never before! Get smart insights on your usage, optimize heating and power, and make informed decisions to save money and live sustainably",
+      "A personal project turning raw smart-meter and Octopus Energy data into clear, AI-powered insights: see when you're using energy, what it's costing, and why your usage patterns change.",
     image: '/energy-insights.png',
     href: '/blog/energy-insights-pal',
   },
