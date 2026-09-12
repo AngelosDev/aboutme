@@ -17,47 +17,62 @@ export default function Experience() {
         <div className={styles.timeline}>
           <div className={`${styles['timeline-item']} ${styles.left}`}>
             <div className={styles['timeline-content']}>
-              <img src="/logo-baresquare.png" alt="Baresquare" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2021 - 2024</div>
-              <h3 className={styles['timeline-title']}>Head of Engineering</h3>
+              <div className={styles['timeline-date']}>2025 - Present</div>
+              <h3 className={styles['timeline-title']}>Engineering Manager (Acting Head of Engineering)</h3>
               <p>
-                Joined the founding team, led the development of a Seed-funded AI/ML e-commerce revenue insights SaaS.
-                Re-architected existing data platform, with cost and scale in mind. Overhauled the team structure and
-                processes to enhance product delivery in a lean and nimble way.
+                Providing high-impact engineering leadership within Avios Group (Oneworld Group's Airline Loyalty
+                currency), accountable for 50+ engineers across partner, currency, membership, and redemption domains.
+                Led adoption of Backstage to improve service ownership and standardise architecture decisions, drove a
+                +6 point increase in Developer Experience Index (DXI) to 67, and developed an LLM-powered engineering
+                workflow for JIRA categorisation to bring data-driven transparency to engineering investment.
               </p>
             </div>
           </div>
 
           <div className={`${styles['timeline-item']} ${styles.right}`}>
             <div className={styles['timeline-content']}>
-              <img src="/logo-checkatrade.png" alt="Checkatrade" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2021</div>
-              <h3 className={styles['timeline-title']}>Head of Software Development</h3>
+              <img src="/logo-baresquare.png" alt="Baresquare" className={styles['timeline-logo']} />
+              <div className={styles['timeline-date']}>2021 - 2024</div>
+              <h3 className={styles['timeline-title']}>Head of Engineering</h3>
               <p>
-                Led a team of 100 developing and operating the #1 marketplace platform that enables consumers to find
-                the right traders for their home improvement projects. Overhauled the hiring process to enhance
-                fairness, diversity, and inclusivity while streamlining procedures for greater efficiency. Defined clear
-                job descriptions and responsibilities across the Development team, effectively managing uncertainty
-                during a period of organizational change.
+                Led a 15-person engineering function building an AI-powered B2B analytics platform, restructuring the
+                team into specialised domains and establishing clear engineering standards. Led migration to a
+                microservices architecture on AWS and GCP, lifting delivery throughput by 200%. Developed AI agent
+                capabilities using OpenAI, Python and Node.js, and embedded shift-left security and quality practices
+                that cut production incidents by 30%.
               </p>
             </div>
           </div>
 
           <div className={`${styles['timeline-item']} ${styles.left}`}>
             <div className={styles['timeline-content']}>
-              <img src="/logo-sainsburys.png" alt="Sainsbury's" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2020 - 2021</div>
-              <h3 className={styles['timeline-title']}>Engineering Manager</h3>
+              <img src="/logo-checkatrade.png" alt="Checkatrade" className={styles['timeline-logo']} />
+              <div className={styles['timeline-date']}>2021</div>
+              <h3 className={styles['timeline-title']}>Head of Development</h3>
               <p>
-                Led a cross-functional product team developing the shared services platform for user management. A
-                platform that was predominantly consisting of backend Rest API and Event bus services for contact
-                management, people profiles and authorisation, powering the personalisation of downstream system
-                experiences across the commercial side of the business.
+                Overhauled hiring, performance management, and career-path frameworks across a 70-engineer team
+                developing and operating the #1 marketplace platform that enables consumers to find the right traders
+                for their home improvement projects, bringing clarity and predictable delivery through a period of
+                major organizational change.
               </p>
             </div>
           </div>
 
           <div className={`${styles['timeline-item']} ${styles.right}`}>
+            <div className={styles['timeline-content']}>
+              <img src="/logo-sainsburys.png" alt="Sainsbury's" className={styles['timeline-logo']} />
+              <div className={styles['timeline-date']}>2020 - 2021</div>
+              <h3 className={styles['timeline-title']}>Engineering Manager</h3>
+              <p>
+                Transitioned B2B platform delivery from external consultants to a high-performing internal team within
+                four months, reducing OPEX and embedding DevOps practice (CI/CD, shift-left testing, on-call ownership)
+                under a "you build it, you own it" model for the shared services platform powering contact management,
+                people profiles and authorisation.
+              </p>
+            </div>
+          </div>
+
+          <div className={`${styles['timeline-item']} ${styles.left}`}>
             <div className={styles['timeline-content']}>
               <img src="/logo-maru.webp" alt="Maru" className={styles['timeline-logo']} />
               <div className={styles['timeline-date']}>2016 - 2020</div>
@@ -70,7 +85,7 @@ export default function Experience() {
             </div>
           </div>
 
-          <div className={`${styles['timeline-item']} ${styles.left}`}>
+          <div className={`${styles['timeline-item']} ${styles.right}`}>
             <div className={styles['timeline-content']}>
               <img src="/logo-edigitalresearch.webp" alt="eDigitalResearch" className={styles['timeline-logo']} />
               <div className={styles['timeline-date']}>2010 - 2016</div>
@@ -82,7 +97,7 @@ export default function Experience() {
               </p>
             </div>
           </div>
-          <div className={`${styles['timeline-item']} ${styles.right}`}>
+          <div className={`${styles['timeline-item']} ${styles.left}`}>
             <div className={styles['timeline-content']}>
               <div className={styles['timeline-date']}>2005 - 2010</div>
               <h3 className={styles['timeline-title']}>Software Engineering positions</h3>
@@ -94,7 +109,7 @@ export default function Experience() {
               </p>
             </div>
           </div>
-          <div className={`${styles['timeline-item']} ${styles.left}`}>
+          <div className={`${styles['timeline-item']} ${styles.right}`}>
             <div className={styles['timeline-content']}>
               <img src="/logo-uop.png" alt="University of Portsmouth" className={styles['timeline-logo']} />
               <div className={styles['timeline-date']}>2000 - 2003</div>
