@@ -17,11 +17,12 @@ export default function Experience() {
         <div className={styles.timeline}>
           <div className={`${styles['timeline-item']} ${styles.left}`}>
             <div className={styles['timeline-content']}>
+              <img src="/logo-iag-loyalty.png" alt="IAG Loyalty" className={styles['timeline-logo']} />
               <div className={styles['timeline-date']}>2025 - Present</div>
               <h3 className={styles['timeline-title']}>Engineering Manager (Acting Head of Engineering)</h3>
               <p>
                 Providing high-impact engineering leadership within Avios Group (Oneworld Group's Airline Loyalty
-                currency), accountable for 50+ engineers across partner, currency, membership, and redemption domains.
+                currency), accountable for engineers across partner, currency, membership, and redemption domains.
                 Led adoption of Backstage to improve service ownership and standardise architecture decisions, drove a
                 +6 point increase in Developer Experience Index (DXI) to 67, and developed an LLM-powered engineering
                 workflow for JIRA categorisation to bring data-driven transparency to engineering investment.
