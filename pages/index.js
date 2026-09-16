@@ -10,9 +10,9 @@ export default function Home() {
     <div>
       <Head>
         <title>Angelos Devletoglou - Portfolio</title>
-        <meta name="description" content="Angelos Devletoglou - VP of Engineering & Mentor | SaaS, AI, B2B2C" />
+        <meta name="description" content="Angelos Devletoglou - Tech Leader & Mentor | SaaS, AI, B2B2C" />
       </Head>
-      <Header title="Angelos Devletoglou" subtitle="VP of Engineering & Mentor | SaaS, AI, B2B2C" />
+      <Header title="Angelos Devletoglou" subtitle="Tech Leader & Mentor | SaaS, AI, B2B2C" />
       <Nav />
       <main className={styles.main}>
         <section>
