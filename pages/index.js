@@ -7,7 +7,7 @@ const wins = [
   'Moved to cloud-native microservices and shifted quality left: releases came 200% faster and production incidents dropped by 30%.',
   'Lifted the Developer Experience Index by 6 points by simplifying workflows and cutting the cognitive load on engineers.',
   'Put AI to work in the engineering process itself: an LLM-powered JIRA workflow, and AI agents that deliver automated insights to enterprise customers.',
-  'Helped take a business from £1M to £35M ARR, before and after acquisition, while owning ISO27001 certification and security compliance.',
+  'Helped take a business from £1M to £35M ARR, before and after acquisition.',
 ];
 
 const pillars = [
