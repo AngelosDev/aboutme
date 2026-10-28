@@ -1,5 +1,5 @@
-/* Warm theme preview. Everything is scoped under .root so the global
-   element rules in globals.css (header, nav, section, p, a ...) don't leak in. */
+/* Warm theme. Everything is scoped under .root so the global element rules
+   in globals.css never leak in. */
 
 .root {
   --bg: #faf6f0;

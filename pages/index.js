@@ -1,109 +1,120 @@
-import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import styles from '../styles/Home.module.css';
+import Layout from '../components/site/Layout';
+import styles from '../styles/Site.module.css';
+
+const wins = [
+  'Grew engineering teams from 10 to 70 people, in enterprise (Avios / IAG Loyalty, Checkatrade) and in fast-moving SaaS (Maru, Baresquare).',
+  'Moved to cloud-native microservices and shifted quality left: releases came 200% faster and production incidents dropped by 30%.',
+  'Lifted the Developer Experience Index by 6 points by simplifying workflows and cutting the cognitive load on engineers.',
+  'Put AI to work in the engineering process itself: an LLM-powered JIRA workflow, and AI agents that deliver automated insights to enterprise customers.',
+  'Helped take a business from £1M to £35M ARR, before and after acquisition, while owning ISO27001 certification and security compliance.',
+];
+
+const pillars = [
+  {
+    title: 'People',
+    intro: 'Good teams are built on trust and autonomy, and they keep growing.',
+    items: [
+      ['Coaching and mentoring', 'Structured ways to help individuals and managers grow.'],
+      ['Team culture', 'Safe, inclusive, collaborative places to do good work.'],
+      ['Retention and growth', 'Org structures and career paths worth staying for.'],
+    ],
+  },
+  {
+    title: 'Business',
+    intro: 'Technology earns its keep when it lines up with what the business needs.',
+    items: [
+      ['Strategy and execution', 'Turning business goals into roadmaps and investment cases.'],
+      [
+        'Operational excellence',
+        'Lower running costs through automation and a sensible in-house / outsourced balance.',
+      ],
+      ['Post-M&A integration', 'Bringing teams, platforms and culture together after an acquisition.'],
+      ['Security and governance', 'ISO27001 and AI review guardrails, so customer security reviews become routine.'],
+    ],
+  },
+  {
+    title: 'Technology',
+    intro: 'Modern, scalable platforms that give the business a real edge.',
+    items: [
+      ['Platform and cloud', 'Resilient, cloud-native systems on AWS and GCP.'],
+      ['Data and AI products', 'Real-time analytics and AI/ML that people actually use.'],
+      ['Developer experience', 'CI/CD, monitoring and tooling that raise productivity and quality.'],
+      ['Agentic SDLC', 'LLM tools in everyday engineering work, with guardrails and metrics to prove the gain.'],
+    ],
+  },
+];
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Angelos Devletoglou - Portfolio</title>
-        <meta name="description" content="Angelos Devletoglou - Tech Leader & Mentor | SaaS, AI, B2B2C" />
-      </Head>
-      <Header title="Angelos Devletoglou" subtitle="Tech Leader & Mentor | SaaS, AI, B2B2C" />
-      <Nav />
-      <main className={styles.main}>
-        <section>
-          <h2>About Me</h2>
-          <p>
-            Technology leader with 20+ years of experience in developing engineering culture, strategy and SaaS data
-            platforms.
+    <Layout
+      title="Angelos Devletoglou"
+      description="Angelos Devletoglou: tech leader and mentor across SaaS, AI and B2B2C."
+    >
+      <div className={styles.hero}>
+        <img src="/avatar.png" alt="Angelos Devletoglou" className={styles.avatar} />
+        <div>
+          <h1 className={styles.h1}>
+            I help engineering teams do their <em>best work</em>.
+          </h1>
+          <p className={styles.lede}>
+            Tech leader and mentor, twenty years in. SaaS, AI and B2B2C are where I&rsquo;ve spent most of them.
           </p>
-          <p>
-            Whether you are a startup, scaleup, or enterprise, I have developed the skills that can help you build
-            high-performing teams, deliver impactful tech solutions, and drive business growth.
-          </p>
-          <h3>Key accomplishments</h3>
-          <p>Across my time at Avios Group, Baresquare, Maru, Sainsbury's and Checkatrade</p>
-          <ul>
-            <li>Scaled engineering organisations from 10 to 70 engineers across enterprise (Avios/IAG Loyalty, Checkatrade) and high-growth SaaS (Maru, Baresquare).</li>
-            <li>
-              Accelerated release throughput by 200% and cut production incidents by 30% through cloud-native
-              microservices architecture and shift-left engineering practices.
-            </li>
-            <li>Drove a +6 point increase in Developer Experience Index (DXI) by streamlining developer workflows and reducing cognitive load.</li>
-            <li>
-              Operationalized AI-assisted engineering, from LLM-powered JIRA workflow tooling to AI agent capabilities
-              delivering automated insights to enterprise customers.
-            </li>
-            <li>Delivered growth pre and post-acquisition from £1M to £35M ARR while owning ISO27001 certification and security compliance.</li>
-          </ul>
-          <h2>Leadership</h2>
-          <p>
-            I inspire <strong>people</strong>, deliver <strong>business</strong> impact, and build future-ready{' '}
-            <strong>technology</strong>. I thrive in environments where strategic thinking, innovation, and strong
-            execution are essential.
-          </p>
+          <div className={styles.actions}>
+            <Link href="/blog" className={styles.btn}>
+              Read my writing
+            </Link>
+            <Link href="/career" className={`${styles.btn} ${styles.btnGhost}`}>
+              See my career
+            </Link>
+          </div>
+        </div>
+      </div>
 
-          <h3>People</h3>
+      <div className={styles.section}>
+        <h2 className={styles.h2}>Where I come from</h2>
+        <div className={styles.prose}>
           <p>
-            I build high-performing, resilient teams by fostering trust, autonomy, and a culture of continuous growth.
+            I&rsquo;ve spent twenty-plus years building engineering culture, strategy and SaaS data platforms. Startup,
+            scale-up or enterprise, the job is much the same: build a team people trust, point it at problems that
+            matter, and ship things that move the business.
           </p>
-          <ul>
-            <li>
-              Leadership Coaching & Mentoring: Helping individuals and managers grow through structured development
-              frameworks
+          <p>My time at Avios Group, Baresquare, Maru, Sainsbury&rsquo;s and Checkatrade boils down to this.</p>
+        </div>
+        <ul className={`${styles.wins} ${styles.prose}`} style={{ marginTop: '2rem', maxWidth: 'none' }}>
+          {wins.map((w) => (
+            <li key={w} className={styles.win}>
+              {w}
             </li>
-            <li>Team Culture & Engagement: Building psychologically safe, inclusive, and collaborative environments</li>
-            <li>
-              Talent Retention & Growth: Designing org structures and career pathways that support long-term success
-            </li>
-          </ul>
+          ))}
+        </ul>
+      </div>
 
-          <h3>Business</h3>
-          <p>I drive growth by aligning technology strategy with commercial outcomes and operational excellence.</p>
-          <ul>
-            <li>
-              Tech Strategy & Execution Planning: Bridging business goals with engineering roadmaps and investment cases
-            </li>
-            <li>
-              Operational Excellence & Cost Optimisation: Streamlining delivery and reducing operational spend through
-              automation and balancing insourcing with outsourcing
-            </li>
-            <li>
-              Post-M&A Integration & Scaling: Onboarding teams, aligning platforms, and embedding culture after
-              acquisitions
-            </li>
-            <li>
-              Security & Governance: Embedding ISO27001 practices and AI review guardrails, turning customer security
-              reviews into routine procedures
-            </li>
-          </ul>
-
-          <h3>Technology</h3>
-          <p>I design and deliver modern, scalable solutions that create scalable value and competitive advantage.</p>
-          <ul>
-            <li>
-              Platform Architecture & Cloud Modernisation: Designing resilient, cloud-native infrastructures on AWS/GCP
-            </li>
-            <li>
-              Data & AI Product Development: Building intelligent systems with real-time analytics and AI/ML
-              capabilities
-            </li>
-            <li>
-              Developer Experience & DevOps Enablement: Implementing CI/CD, monitoring, and tooling to increase
-              productivity and quality
-            </li>
-            <li>
-              Agentic SDLC: Embedding LLM/AI-powered tools into daily engineering workflows with review guardrails and
-              metrics to drive measurable efficiency
-            </li>
-          </ul>
-        </section>
-      </main>
-      <Footer />
-    </div>
+      <div className={styles.section}>
+        <h2 className={styles.h2}>How I lead</h2>
+        <div className={styles.prose}>
+          <p>
+            I look after three things: <strong>people</strong>, <strong>business</strong> impact and future-ready{' '}
+            <strong>technology</strong>. I do my best work where strategy, curiosity and steady execution all matter.
+          </p>
+        </div>
+        <div className={styles.grid3} style={{ marginTop: '2rem' }}>
+          {pillars.map((p) => (
+            <div key={p.title} className={styles.pillar}>
+              <h3 className={styles.h3}>{p.title}</h3>
+              <p>{p.intro}</p>
+              <ul>
+                {p.items.map(([name, text]) => (
+                  <li key={name}>
+                    <strong>{name}</strong>
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Layout>
   );
 }

@@ -1,31 +1,15 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import styles from '../styles/Home.module.css';
+import Layout, { PageHeader } from '../components/site/Layout';
+import styles from '../styles/Site.module.css';
 
 export default function MeetMe() {
   return (
-    <div>
-      <Head>
-        <title>Meet Me - Angelos Devletoglou</title>
-        <meta name="description" content="Schedule a meeting with Angelos Devletoglou" />
-      </Head>
-      <Header title="Meet Me" subtitle="Schedule some time to chat" />
-      <Nav />
-      <main className={styles.main}>
-        <div className={styles.container}>
-          {/* Google Calendar Appointment Scheduling iframe */}
-          <iframe
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ21LFuym13gGcTpUPF486zBDncx8U8VEkdM2tCRT7Vveq0m4vdF4MHczrou0jtjwfLQ1hSoFiGN?gv=true"
-            style={{ border: 0 }}
-            width="100%"
-            height="600"
-            frameBorder="0"
-          ></iframe>
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <Layout title="Meet me - Angelos Devletoglou" description="Book some time to talk with Angelos Devletoglou.">
+      <PageHeader title="Let's talk" lede="Pick a time that works and we'll have a chat." />
+      <iframe
+        title="Book a meeting"
+        className={styles.frame}
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ21LFuym13gGcTpUPF486zBDncx8U8VEkdM2tCRT7Vveq0m4vdF4MHczrou0jtjwfLQ1hSoFiGN?gv=true"
+      />
+    </Layout>
   );
 }

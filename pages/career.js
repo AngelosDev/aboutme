@@ -1,129 +1,93 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import styles from '../styles/Experience.module.css';
+import Layout, { PageHeader } from '../components/site/Layout';
+import styles from '../styles/Site.module.css';
 
-export default function Experience() {
+const roles = [
+  {
+    logo: '/logo-iag-loyalty.png',
+    org: 'IAG Loyalty',
+    date: '2025 – Present',
+    title: 'Engineering Manager (Acting Head of Engineering)',
+    text: 'Leading engineering inside Avios Group, the Oneworld airline loyalty currency, across the partner, currency, membership and redemption domains. I introduced Backstage to clarify service ownership and standardise architecture decisions, helped lift the Developer Experience Index by 6 points to 67, and built an LLM-powered workflow that categorises JIRA work, so engineering investment is finally visible in data.',
+  },
+  {
+    logo: '/logo-baresquare.png',
+    org: 'Baresquare',
+    date: '2021 – 2024',
+    title: 'Head of Engineering',
+    text: 'Led 15 engineers building an AI-powered B2B analytics platform. I reorganised the team into specialist domains, set clear engineering standards and led the move to microservices on AWS and GCP, which raised delivery throughput by 200%. We built AI agent capabilities with OpenAI, Python and Node.js, and shift-left security and quality practices cut production incidents by 30%.',
+  },
+  {
+    logo: '/logo-checkatrade.png',
+    org: 'Checkatrade',
+    date: '2021',
+    title: 'Head of Development',
+    text: "Reworked hiring, performance management and career paths for a 70-engineer team running the UK's number one marketplace for finding traders for home improvement. The result was clarity and predictable delivery through a period of major change.",
+  },
+  {
+    logo: '/logo-sainsburys.png',
+    org: "Sainsbury's",
+    date: '2020 – 2021',
+    title: 'Engineering Manager',
+    text: 'Within four months I moved B2B platform delivery from external consultants to a strong in-house team, cutting OPEX. We adopted CI/CD, shift-left testing and on-call ownership under a "you build it, you own it" model, for the shared services platform behind contact management, people profiles and authorisation.',
+  },
+  {
+    logo: '/logo-maru.webp',
+    org: 'Maru',
+    date: '2016 – 2020',
+    title: 'CTO UK',
+    text: "After Maru acquired eDigitalResearch, I owned the execution of the technology strategy behind the group's international growth, leading a cross-functional team of engineers, testers, product managers and DevOps specialists.",
+  },
+  {
+    logo: '/logo-edigitalresearch.webp',
+    org: 'eDigitalResearch',
+    date: '2010 – 2016',
+    title: 'Director of Technical Operations',
+    text: 'Ran technical operations and supported the board on long-term vision, business development, efficiency and product innovation, working with the senior team to make it a place where people felt valued.',
+  },
+  {
+    org: 'Early career',
+    date: '2005 – 2010',
+    title: 'Software engineering roles',
+    text: "I started as a PHP developer at a boutique web agency, where I built a CMS, a white-label e-commerce platform and an SMS marketing platform. Then I joined a scale-up agency, delivering for the BBC, Sky, British Airways, Sainsbury's and other large clients.",
+  },
+  {
+    logo: '/logo-uop.png',
+    org: 'University of Portsmouth',
+    date: '2000 – 2003',
+    title: 'BSc in Internet Technology',
+    text: 'Graduated with a 2:1. My final-year project was a J2ME mobile app for the university registry.',
+  },
+];
+
+export default function Career() {
   return (
-    <div>
-      <Head>
-        <title>Experience - Angelos Devletoglou</title>
-        <meta name="description" content="Experience of Angelos Devletoglou" />
-      </Head>
-      <Header title="Career" subtitle="Career and education timeline" />
-      <Nav />
-      <main>
-        <div className={styles.timeline}>
-          <div className={`${styles['timeline-item']} ${styles.left}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-iag-loyalty.png" alt="IAG Loyalty" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2025 - Present</div>
-              <h3 className={styles['timeline-title']}>Engineering Manager (Acting Head of Engineering)</h3>
-              <p>
-                Providing high-impact engineering leadership within Avios Group (Oneworld Group's Airline Loyalty
-                currency), accountable for engineers across partner, currency, membership, and redemption domains.
-                Led adoption of Backstage to improve service ownership and standardise architecture decisions, drove a
-                +6 point increase in Developer Experience Index (DXI) to 67, and developed an LLM-powered engineering
-                workflow for JIRA categorisation to bring data-driven transparency to engineering investment.
-              </p>
+    <Layout title="Career - Angelos Devletoglou" description="Career and education timeline of Angelos Devletoglou.">
+      <PageHeader
+        title="Career"
+        lede="Twenty years of building teams, platforms and the habits that keep them healthy."
+      />
+      <div className={styles.timeline}>
+        {roles.map((r) => (
+          <div key={r.org} className={styles.role}>
+            <div className={styles.roleHead}>
+              <div>
+                <span className={styles.meta}>{r.date}</span>
+                <h2 className={styles.h3} style={{ marginTop: '0.25rem' }}>
+                  {r.title}
+                </h2>
+                <span
+                  className={styles.meta}
+                  style={{ color: 'var(--muted)', textTransform: 'none', letterSpacing: 0 }}
+                >
+                  {r.org}
+                </span>
+              </div>
+              {r.logo && <img src={r.logo} alt="" className={styles.logo} />}
             </div>
+            <p>{r.text}</p>
           </div>
-
-          <div className={`${styles['timeline-item']} ${styles.right}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-baresquare.png" alt="Baresquare" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2021 - 2024</div>
-              <h3 className={styles['timeline-title']}>Head of Engineering</h3>
-              <p>
-                Led a 15-person engineering function building an AI-powered B2B analytics platform, restructuring the
-                team into specialised domains and establishing clear engineering standards. Led migration to a
-                microservices architecture on AWS and GCP, lifting delivery throughput by 200%. Developed AI agent
-                capabilities using OpenAI, Python and Node.js, and embedded shift-left security and quality practices
-                that cut production incidents by 30%.
-              </p>
-            </div>
-          </div>
-
-          <div className={`${styles['timeline-item']} ${styles.left}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-checkatrade.png" alt="Checkatrade" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2021</div>
-              <h3 className={styles['timeline-title']}>Head of Development</h3>
-              <p>
-                Overhauled hiring, performance management, and career-path frameworks across a 70-engineer team
-                developing and operating the #1 marketplace platform that enables consumers to find the right traders
-                for their home improvement projects, bringing clarity and predictable delivery through a period of
-                major organizational change.
-              </p>
-            </div>
-          </div>
-
-          <div className={`${styles['timeline-item']} ${styles.right}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-sainsburys.png" alt="Sainsbury's" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2020 - 2021</div>
-              <h3 className={styles['timeline-title']}>Engineering Manager</h3>
-              <p>
-                Transitioned B2B platform delivery from external consultants to a high-performing internal team within
-                four months, reducing OPEX and embedding DevOps practice (CI/CD, shift-left testing, on-call ownership)
-                under a "you build it, you own it" model for the shared services platform powering contact management,
-                people profiles and authorisation.
-              </p>
-            </div>
-          </div>
-
-          <div className={`${styles['timeline-item']} ${styles.left}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-maru.webp" alt="Maru" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2016 - 2020</div>
-              <h3 className={styles['timeline-title']}>CTO UK</h3>
-              <p>
-                Following the acquisition of eDigitalResearch, I was responsible for the execution and implementation of
-                the technology strategy supporting the rapid growth of Maru Group internationally through leading a
-                cross-functional team of software engineers, testers, product managers and DevOps specialists.
-              </p>
-            </div>
-          </div>
-
-          <div className={`${styles['timeline-item']} ${styles.right}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-edigitalresearch.webp" alt="eDigitalResearch" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2010 - 2016</div>
-              <h3 className={styles['timeline-title']}>Director of Technical Operations</h3>
-              <p>
-                Oversaw the technical operations team alongside supporting the board of Directors with their long term
-                vision, business development, efficiency, product innovation and providing employees with an environment
-                they feel valued in collaboration with the other members of the senior management team.
-              </p>
-            </div>
-          </div>
-          <div className={`${styles['timeline-item']} ${styles.left}`}>
-            <div className={styles['timeline-content']}>
-              <div className={styles['timeline-date']}>2005 - 2010</div>
-              <h3 className={styles['timeline-title']}>Software Engineering positions</h3>
-              <p>
-                Started my career as a PHP developer in a boutique web design agency, developed a content management
-                system, a white label e-commerce platform, sms marketing platform. Moved on in a scale-up agency,
-                delivering projects for customers such as the BBC, Sky, British Airways, Sainsbury's and many more
-                enterprise customers.
-              </p>
-            </div>
-          </div>
-          <div className={`${styles['timeline-item']} ${styles.right}`}>
-            <div className={styles['timeline-content']}>
-              <img src="/logo-uop.png" alt="University of Portsmouth" className={styles['timeline-logo']} />
-              <div className={styles['timeline-date']}>2000 - 2003</div>
-              <h3 className={styles['timeline-title']}>BSc in Internet Technology</h3>
-              <p>
-                Studied at the University of Portsmouth, graduating with a 2:1 in Internet Technology. <br /> Final year
-                project: J2ME mobile application for university registry.
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
+        ))}
+      </div>
+    </Layout>
   );
 }
