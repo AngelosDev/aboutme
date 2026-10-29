@@ -31,8 +31,8 @@ export default function Layout({ title, description, children }) {
 
       <div className={styles.nav} role="navigation" aria-label="Main">
         <div className={styles.navInner}>
-          <Link href="/" className={styles.brand}>
-            a<span>.</span>d
+          <Link href="/" className={styles.brand} aria-label="Angelos Devletoglou, home">
+            Angelos <span className={styles.brandDev}>Dev</span>letoglou
           </Link>
           <ul className={styles.navList}>
             {NAV.map((item) => (
